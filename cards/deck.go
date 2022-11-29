@@ -19,6 +19,8 @@ func newDeck() deck { // como es la creación de un nuevo objeto, no necesita re
 	return cards
 }
 
+
+
 func (d deck) print() { // agregamos el receiver solo cuando queremos hacer algo con el objeto ya creado
 	for i, card := range d {
 		fmt.Println(i, card)
